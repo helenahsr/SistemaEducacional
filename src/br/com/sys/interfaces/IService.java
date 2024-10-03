@@ -1,9 +1,9 @@
 package br.com.sys.interfaces;
 
-public interface IService {
-	public void add();
+public interface IService<T> {
+	public void add(T entity);
 	
-	public void remove();
+	public void remove(T entity);
 	
 	public int getTotalItens();
 }

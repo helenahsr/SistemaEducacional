@@ -5,23 +5,12 @@ import br.com.sys.interfaces.IService;
 import br.com.sys.models.Aluno;
 import br.com.sys.repositorys.*;
 
-public class AlunoServiceImpl implements IService{
+public class AlunoServiceImpl implements IService<Aluno>{ //Olhar com o professor
 	private RepositoryAlunoImpl repositoryAluno;
-	
-	@Override
-	public void add() {
-		// TODO Auto-generated method stub
-		
-	}
 
-	@Override
-	public void remove() {
-		
-	}
-
-	@Override
 	public int getTotalItens() {
-		return repositoryAluno.getTotalItens();
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 	public Aluno getAluno(int cpf) {
@@ -37,5 +26,20 @@ public class AlunoServiceImpl implements IService{
 	public void getResultado() { //Olhar com o professor
 		
 	}
+
+	@Override
+	public void add(Aluno entity) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void remove(Aluno entity) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
 
 }
