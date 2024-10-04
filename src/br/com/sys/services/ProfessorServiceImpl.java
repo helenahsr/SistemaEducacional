@@ -10,30 +10,27 @@ public class ProfessorServiceImpl implements IService<Professor>{
 
 	@Override
 	public int getTotalItens() {
-		// TODO Auto-generated method stub
-		return 0;
+		return repositoryProfessor.getTotalItens();
 	}
 	
 	public Professor getProfessor(int cpf) {
-		return null;
+		return repositoryProfessor.getProfessor(cpf);
 		
 	}
 	
 	public List<Professor> getALLProfessores() {
-		return null;
-		
+		return repositoryProfessor.listALL();
 	}
 
 	@Override
 	public void add(Professor entity) {
-		// TODO Auto-generated method stub
+		repositoryProfessor.addProfessor(entity);
 		
 	}
 
 	@Override
 	public void remove(Professor entity) {
-		// TODO Auto-generated method stub
-		
+		repositoryProfessor.removeProfessor(entity);
 	}
 	
 }

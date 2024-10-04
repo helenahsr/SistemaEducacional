@@ -9,8 +9,7 @@ public class AlunoServiceImpl implements IService<Aluno>{ //Olhar com o professo
 	private RepositoryAlunoImpl repositoryAluno;
 
 	public int getTotalItens() {
-		// TODO Auto-generated method stub
-		return 0;
+		return repositoryAluno.getTotalItens();
 	}
 	
 	public Aluno getAluno(int cpf) {
@@ -29,14 +28,13 @@ public class AlunoServiceImpl implements IService<Aluno>{ //Olhar com o professo
 
 	@Override
 	public void add(Aluno entity) {
-		// TODO Auto-generated method stub
+		repositoryAluno.addAluno(entity);
 		
 	}
 
 	@Override
 	public void remove(Aluno entity) {
-		// TODO Auto-generated method stub
-		
+		repositoryAluno.removeAluno(entity);		
 	}
 
 

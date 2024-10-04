@@ -19,8 +19,8 @@ public abstract class ControllerAluno {
 	        //do while
 		do {
 			opcao = JOptionPane.showOptionDialog(null,
-	                "Escolha uma opção", 
-	                "Menu Principal", 
+	                "Menu aluno", 
+	                "Menu Aluno\n\n", 
 	                JOptionPane.DEFAULT_OPTION, 
 	                JOptionPane.INFORMATION_MESSAGE, 
 	                null, 

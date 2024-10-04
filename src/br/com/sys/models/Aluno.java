@@ -1,13 +1,13 @@
 package br.com.sys.models;
 
 public class Aluno extends Pessoa {
-	private double Aluno;
+	private double nota;
 
-	public double getAluno() {
-		return Aluno;
+	public double getNota() {
+		return nota;
 	}
 
-	public void setAluno(double aluno) {
-		Aluno = aluno;
+	public void setNota(double nota) {
+		this.nota = nota;
 	}
 }
