@@ -1,17 +1,21 @@
 package br.com.sys.repositorys;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import br.com.sys.interfaces.IRepository;
 import br.com.sys.models.Aluno;
-import br.com.sys.models.Professor;
 
 public class RepositoryAlunoImpl implements IRepository{
 	private List<Aluno> alunos;
+	
+    public RepositoryAlunoImpl() {
+        this.alunos = new ArrayList<>();
+    }
 
 	@Override
 	public int getIdSequencia() {
-		return alunos.size() + 1; //Tá errado, conserta depois.
+		return alunos.size() + 1; 
 	}
 
 	@Override
